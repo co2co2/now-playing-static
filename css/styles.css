@@ -199,8 +199,6 @@ figure {
 /*media qurie++++*/
 @media (min-width: 768px) {
 
-
-
   .site-logo {
     position: fixed;
     top: 1em;
@@ -210,15 +208,12 @@ figure {
     margin: 0;
     z-index: 101;}
 
-
-    .site-nav {
-        position: fixed;
-        width: unset;
-        height: 100%;
-        right: auto;
-        padding-top: 15%;
-
-
+  .site-nav {
+    position: fixed;
+    width: unset;
+    height: 100%;
+    right: auto;
+    padding-top: 15%;
   }
 
   .site-nav-item {
@@ -226,13 +221,13 @@ figure {
     width: auto;
 }
 
-  .clearfix {
-    clear: both;
-
+main{
+    display: block;
+    margin-left: 8%;
   }
 
   .movie-overview {
-    display: inline-block;
+    display: block;
   }
 
   footer.site-footer {
@@ -250,4 +245,28 @@ figure {
 
   section.about {
       display: inline-flex;
+  }
+}
+/*second break with a bigger screen*/
+
+ @media (min-width: 992px){
+
+
+ article:nth-child(n + 2) {
+   width: 33%;
+   float: left;
+  }
+
+  article:nth-child(n + 2) .movie-details
+  {display: none;}
+
+  .movie-poster {
+    display: block;
+  }
+
+  article:first-child .movie-poster {
+  display:none;
+    }
+  article:nth-child(n + 2) .movie-backdrop {
+    display: none;
   }
