@@ -195,3 +195,59 @@ figure {
 .about > p {
   margin: 0;
 }
+
+/*media qurie++++*/
+@media (min-width: 768px) {
+
+
+
+  .site-logo {
+    position: fixed;
+    top: 1em;
+    left: 0;
+    width: 65px;
+    height: 80px;
+    margin: 0;
+    z-index: 101;}
+
+
+    .site-nav {
+        position: fixed;
+        width: unset;
+        height: 100%;
+        right: auto;
+        padding-top: 15%;
+
+
+  }
+
+  .site-nav-item {
+    float: unset;
+    width: auto;
+}
+
+  .clearfix {
+    clear: both;
+
+  }
+
+  .movie-overview {
+    display: inline-block;
+  }
+
+  footer.site-footer {
+      background-color: #333333;
+      color: #ffffff;
+      padding: 1em;
+      display: inline-block;
+      width: 100%;
+  }
+
+  nav.footer-nav {
+      display: inline-block;
+      /* float: left; */
+  }
+
+  section.about {
+      display: inline-flex;
+  }
